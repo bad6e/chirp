@@ -1,24 +1,45 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Bret's Chat Application
 
-Things you may want to cover:
+> "You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you." - Walt Disney
 
-* Ruby version
+Hello and welcome to Bret's Basic Chat App. A super low/no thrills app for chatting with all your Disney friends - for now Walt and Mickey Mouse.
 
-* System dependencies
+View here: https://recordit.co/Io2WJeNOGr
 
-* Configuration
+### Getting Up and Running
 
-* Database creation
+1. Clone Repo and navigate to root file
+2. Install the gems - `bundle install`
+3. Install the front-end packages - `yarn install`
+4. Set up rails `rake db:create db:migrate db:seed; rails s`
+5. In new tab, navigate to root and start webpack `./bin/webpack-dev-server`
+5. Navigate to http://localhost:3000/
+6. Have a magical experience!
 
-* Database initialization
+Note: You may have to install the latest versions of Ruby/Rails
 
-* How to run the test suite
+#### Other Useful Information
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Versions
 
-* Deployment instructions
+* Rails v: 5.2.3
+* Ruby v: 2.6.3
+* React v: 16.9.0
 
-* ...
+#### Backend Testing
+
+This app uses RSpec and has no front-end testings (yolo)
+
+`rspec spec/`
+
+#### Database Layout
+
+[Click Here to See DB Structure](https://random-fun.s3.amazonaws.com/Screen+Shot+2019-09-26+at+4.42.24+PM.png)
+
+#### Troubleshooting
+
+Clone and make a pr :)
+
+or email me at: doucette.bret@gmail.com
