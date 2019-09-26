@@ -1,0 +1,6 @@
+<%= content_tag :div,
+  id: "chat-room-base",
+  data: { 'chat-room-id': chat_room_id, 'current-user': current_user } do %>
+<% end %>
+
+<%= javascript_pack_tag 'chatApp' %>
