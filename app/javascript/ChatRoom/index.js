@@ -1,9 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
+import ActionCable from 'actioncable'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-import ActionCable from 'actioncable'
 import { API_ROOT, API_WEB_SOCKETS_ROOT, CHANNEL_ID } from '../constants'
 import Messages from './Messages'
 import NewMessageForm from './Form'
@@ -86,5 +88,8 @@ class ChatRoom extends React.Component {
     )
   }
 }
+
+ChatRoom.propTypes = { chatRoomId: PropTypes.number, currentUser: PropTypes.object }
+ChatRoom.defaultProps = { chatRoomId: '', currentUser: {} }
 
 export default ChatRoom

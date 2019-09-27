@@ -6,7 +6,10 @@
 
 Hello and welcome to Bret's Basic Chat App. A super low/no thrills app for chatting with all your Disney friends - for now Walt and Mickey Mouse.
 
-View here: https://recordit.co/Io2WJeNOGr
+View here:
+
+1. Single Screen: https://recordit.co/Io2WJeNOGr
+2. Dual Screen: https://recordit.co/lxVz7ZkbxS
 
 ### Getting Up and Running
 

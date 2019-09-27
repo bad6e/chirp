@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 
@@ -54,5 +56,8 @@ class NewMessageForm extends React.Component {
     )
   }
 }
+
+NewMessageForm.propTypes = { chatRoomId: PropTypes.number, currentUser: PropTypes.object }
+NewMessageForm.defaultProps = { chatRoomId: '', currentUser: {} }
 
 export default NewMessageForm
