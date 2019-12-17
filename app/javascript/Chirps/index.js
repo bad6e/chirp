@@ -27,7 +27,7 @@ class Chirps extends React.Component {
             <ListGroup>
               {chirps.map((chirp) => {
                 return (
-                  <ListGroup.Item>
+                  <ListGroup.Item key={chirp.id}>
                     {chirp.id}
                     {' '}
                     --
