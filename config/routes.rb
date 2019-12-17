@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
-  root 'chat_rooms#show'
+  root "chirps#index"
 
-  resources :chat_rooms, only: [:show]
+  get "/index" => "chirps#index"
 
   namespace :api do
     namespace :v1 do
-      resources :chat_rooms, only: [:show]
-      resources :messages, only: [:create]
+      resources :chirps, only: [:index]
     end
   end
-
-  mount ActionCable.server => '/cable'
 end

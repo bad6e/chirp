@@ -7,8 +7,8 @@ default: &default
 
 development:
   <<: *default
-  database: chat-app_development
+  database: chirp_development
 
 test:
   <<: *default
-  database: chat-app_test
+  database: chirp_test

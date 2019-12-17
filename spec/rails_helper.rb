@@ -6,7 +6,6 @@ require 'rspec/rails'
 require 'database_cleaner'
 require 'capybara/rspec'
 require 'support/factory_bot.rb'
-require "action_cable/testing/rspec"
 
 # Require support
 %w(support).each do |dir|

@@ -10,35 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_22_144606) do
+ActiveRecord::Schema.define(version: 2019_12_17_143650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "chat_rooms", force: :cascade do |t|
-    t.string "title"
+  create_table "chirps", force: :cascade do |t|
+    t.string "text", limit: 140
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.string "content"
-    t.bigint "chat_room_id"
-    t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["chat_room_id"], name: "index_messages_on_chat_room_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username", default: "", null: false
-    t.string "name", default: "", null: false
-    t.string "profile_url", default: ""
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "messages", "chat_rooms"
-  add_foreign_key "messages", "users"
 end
